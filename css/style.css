@@ -10,31 +10,68 @@
 
 body {
   background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
 }
 
-/* Media Query for Mobile */
-@media only screen and (max-width: 375px) {
-  /* Styles specific to mobile devices */
+.text {
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  color: var(--grayish-blue);
 }
 
-/* Media Query for Desktop */
-@media only screen and (min-width: 376px) and (max-width: 1440px) {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  width: 50%; /* Set the width to 100% to make it match the container */
+  max-width: 20%;
+}
+
+.card img {
+  border-radius: 1rem;
+  width: 100%; /* Set the width of the image to 100% */
+  max-width: 100%; /* Ensure the image does not exceed its natural size */
+}
+
+.title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+/** Media Query for Mobile */
+@media only screen and (max-width: 1440px) {
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 
   .card {
     background-color: var(--white);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 1.5rem;
+    width: 100%; /* Set the width to 100% */
+    max-width: none; /* Remove the max-width restriction */
   }
 
   .card img {
     border-radius: 1rem;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
 }
