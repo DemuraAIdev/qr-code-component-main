@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* root */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 375px) {
+  /* Styles specific to mobile devices */
+}
+
+/* Media Query for Desktop */
+@media only screen and (min-width: 376px) and (max-width: 1440px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: var(--white);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .card img {
+    border-radius: 1rem;
+    max-width: 50%;
+  }
+}
